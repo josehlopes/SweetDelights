@@ -1,0 +1,17 @@
+Um guia completo sobre grids para design responsivo:
+https://brasil.uxdesign.cc/um-guia-completo-sobre-grids-para-design-responsivo-6b192fea0124
+
+HTML ou Body: como definir a largura e a altura como o tamanho total da página:
+https://www.freecodecamp.org/portuguese/news/html-ou-body-como-definir-a-largura-e-a-altura-como-o-tamanho-total-da-pagina/
+
+Como CSS é estruturado:
+https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps/How_CSS_is_structured
+
+Normalização para HTML e CSS:
+https://www.w3.org/International/questions/qa-html-css-normalization.pt-br
+
+CSS Grid – Um Guia Interativo (Parte 1 – Containers):
+https://www.treinaweb.com.br/blog/css-grid-um-guia-interativo-parte-1-containers
+
+Estilo de imagem CSS: Aprimorando o Apelo Visual com Estilo:
+https://kinsta.com/pt/blog/estilo-de-imagem-css/#:~:text=Para%20colocar%20o%20texto%20em,posicionamento%20CSS%20e%20z-index%20.&text=No%20código%20acima%2C%20image-container,estabelecer%20um%20contexto%20de%20posicionamento.

@@ -1,109 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
-* {
+* {       
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "header header" 
+                         "content content " 
+                         "footer footer ";
+    grid-template-rows: 5% 95% 5%;
+    grid-template-columns: auto;
+}
+
+.header {
+    grid-area: header;
+    margin-bottom: 10px;
+    grid-row: 1;
+}
+
+.sessoes{
     font-family: "Merriweather", serif;
-    font-weight: 300;
-    font-style: normal;
+    display: grid;
+    grid-area: content;
+    grid-template-rows: 1fr 1fr 1fr;
 }
-
-/*Header titulo*/
-.sessoes h1 {
-    font-family: "Merriweather", serif;
-    font-weight: 700;
-    font-style: bold;
-    text-align: center;
-    color: white;
-
-}
-
-.sessoes p{
-    color: white;
-}
-
-.sessoes#bemVindo {
-    position: absolute;
-    width: 450px;
-    top: 12%;
-    left: 10%;
-    z-index: 2;
-    background-color: rgba(28, 19, 12, 0.85);    padding: 20px;
+/* Navegação */
+.navegacao {
+    width: 95%;
+    height: 70%;
     border-radius: 60px;
-    text-align: center;
-}
-/*Navegação */
-.navegacao ul{
+    background-color: rgba(238,214,214,255);
     margin: auto;
-    width: 1350px;
-    margin-bottom: 20px;
-    border-radius: 60px;
-    background-color: #d7516c;
-    text-align: center;
+    position: relative;
+    top: 10%;
+    display: flex;
+    align-items: center;
 }
 
-.navegacao ul li{
-    
-    padding:  10px 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+.navegacao ul {
+    text-align: center;
+    margin: auto;
+}
+
+.navegacao ul li {
     display: inline-block;
+    font-size: 20px;
+    margin: 0 15px;
 }
 
 .navegacao ul li a {
-    color: white;
-    font-family: "Merriweather", serif;
-    font-weight: 700;
-    font-style: bold;
-    text-align: center;
     text-decoration: none;
-}
-
-/*Background img*/
-.imgDiv {
-    overflow: hidden;
-    height: 600px;
-    width: 1400px;
-    margin: auto;
-    position: relative;
-    display: block;
-    border-radius: 60px;
-}
-
-.imgDiv #cupcake {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    bottom: 200px;
-}
-/*Sobre*/
-
-.sessoes h2 {
-    font-family: "Merriweather", serif;
+    color: black; 
+    display: block; 
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 25px;
     font-weight: 700;
     font-style: bold;
+}
+.navegacao ul li a:hover {
+    width: fit-content;
+    height: auto;
+    color: white;
+    background-color: rgb(79, 42, 40);;
+    border-radius: 10px;  
+}
+/*Bem vindo!*/
+#bemVindo {
+    position: relative;
+    background-color: white;
+    grid-row: 2;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    height: 50%;
+    display: inline-block;
+}
+
+#infoDiv {
+    position: relative;
+    width: 40%;
+    left: 5%;
+    top: 5%;
+    z-index: 1;
+    background-color: rgb(79, 42, 40);
+    padding: 20px;
+    border-radius: 60px;
+}
+#infoDiv h1 {
     text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: bold;
     color: white;
 }
-.sessoes#sobre {
-    margin-top: 10px;
-    float: left;
-    width: 450px;
-    top: 55%;
-    left: 3.8%;
-    z-index: 2;
-    background-color: rgba(28, 19, 12, 0.85);    padding: 20px;
-    border-radius: 60px;
-    text-align: center;
+#infoDiv p {
     position: relative;
+    text-align: left;
+    line-break: loose;
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
 }
-/*Contatos*/
-.sessoes#contatos {
-    background-color: rgba(28, 19, 12, 0.85);    padding: 20px;
-    width: 850px;
-    height: 335px;
-    margin-top: 10px;
-    left: 40%;
-    margin-right: 40px;
+#imgDiv {
+    position: relative;
+    margin: auto;
+    width: 95%;
+    height: 70%;
+    overflow: hidden;
     border-radius: 60px;
-    position: absolute;
-    align-content: center;
+    bottom: 27%;
+}
+#bemVindo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    bottom: 180px;
+}
+
+/*Sobre*/
+#sobre {
+    background-color: #000;
+    grid-row: 3;
+
+}
+
+/*Contatos*/
+#contatos {
+    background-color: red;
+    grid-row: 4;
 }
