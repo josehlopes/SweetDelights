@@ -1,143 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300;1,700&display=swap');
-
-* {       
+/* Configuração do documento */
+* { 
     margin: 0;   
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+}
 
 body {
     min-height: 100vh;
-    max-width: 100%;
-    background-color: white;
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas: "header header" 
-                         "content content " 
-                         "footer footer ";
-    grid-template-rows: 5% 95% 5%;
-    grid-template-columns: auto;
+    width: 100%;
+    border: 5px dashed red;
 }
+
+.main {
+    display: grid;  
+    grid-gap: 5%;  
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));  
+}
+
+/* Header */
 
 .header {
-    grid-area: header;
-    margin-bottom: 10px;
-    grid-row: 1;
-}
-
-.sessoes{
-    font-family: "Merriweather", serif;
-    display: grid;
-    grid-area: content;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-/* Navegação */
-.navegacao {
-    width: 95%;
-    height: 70%;
-    border-radius: 60px;
-    background-color: rgba(238,214,214,255);
-    margin: auto;
-    position: relative;
-    top: 10%;
+    
     display: flex;
+    justify-content: center;
     align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
 }
 
-.navegacao ul {
-    text-align: center;
+.navegacao {
+
+    display: flex;
+    width: 95%;
+    height: 65%;
+    background-color: rgba(215, 81, 108, 84);
+    border-radius: 60px;
+
+    
+}
+
+.navegacao ul {    
+    display: flex;
+    width: 80%;
     margin: auto;
+    justify-content: space-around;
 }
 
 .navegacao ul li {
+
+    padding: 2%;
     display: inline-block;
-    font-size: 20px;
-    margin: 0 15px;
+    
 }
 
 .navegacao ul li a {
+    font-weight: bold;
+    font-size: 100%;
     text-decoration: none;
-    color: black; 
-    display: block; 
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    font-style: bold;
-}
-.navegacao ul li a:hover {
-    width: fit-content;
-    height: auto;
-    color: white;
-    background-color: rgb(79, 42, 40);;
-    border-radius: 10px;  
-}
-/*Bem vindo!*/
-#bemVindo {
-    position: relative;
-    background-color: white;
-    grid-row: 2;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 5px;
-    height: 50%;
-    display: inline-block;
-}
-
-#infoDiv {
-    position: relative;
-    width: 40%;
-    left: 5%;
-    top: 5%;
-    z-index: 1;
-    background-color: rgb(79, 42, 40);
-    padding: 20px;
-    border-radius: 60px;
-}
-#infoDiv h1 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    font-style: bold;
     color: white;
 }
-#infoDiv p {
-    position: relative;
-    text-align: left;
-    line-break: loose;
-    margin-top: 5px;
-    font-size: 20px;
-    color: white;
-    z-index: 1;
-}
-#imgDiv {
-    position: relative;
-    margin: auto;
-    width: 95%;
-    height: 70%;
-    overflow: hidden;
-    border-radius: 60px;
-    bottom: 27%;
-}
-#bemVindo img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    position: relative;
-    bottom: 180px;
-}
 
-/*Sobre*/
-#sobre {
-    background-color: #000;
-    grid-row: 3;
+/* Content */
 
-}
-
-/*Contatos*/
-#contatos {
-    background-color: red;
-    grid-row: 4;
+.sessoes {
+    grid-row-start: 2;
+    grid-row-end: 5;
 }

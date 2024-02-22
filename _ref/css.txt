@@ -15,3 +15,14 @@ https://www.treinaweb.com.br/blog/css-grid-um-guia-interativo-parte-1-containers
 
 Estilo de imagem CSS: Aprimorando o Apelo Visual com Estilo:
 https://kinsta.com/pt/blog/estilo-de-imagem-css/#:~:text=Para%20colocar%20o%20texto%20em,posicionamento%20CSS%20e%20z-index%20.&text=No%20código%20acima%2C%20image-container,estabelecer%20um%20contexto%20de%20posicionamento.
+
+Como tornar seu HTML responsivo adicionando uma única linha de CSS:
+https://www.freecodecamp.org/portuguese/news/como-tornar-seu-html-responsivo-adicionando-uma-unica-linha-de-css/
+
+IMPORTANTE!
+
+Conceitos básicos de Grid Layout:
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout
+
+3 formas de centralizar qualquer elemento em CSS:
+https://demenezes.dev/posts/centralizar-em-css/
