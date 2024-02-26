@@ -16,41 +16,60 @@
         <header class="header">
             <nav class="navegacao">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#bemVindo">Início</a></li>
+                    <li><a href="#sobreDiv">Sobre Nós</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contatos">Contato</a></li>
                 </ul>
             </nav>
         </header>
         <!--Sessão boas vindas-->
         <section class="sessoes" id="bemVindo">
-            <div id="infoDiv">
-                <h1>Bem-vindo à SweetDelights!</h1>
-                <p>Explore o universo de sabores irresistíveis da nossa confeitaria. De cupcakes delicados a bolos personalizados, cada doce é uma obra de arte comestível feita com carinho.</p>
-                <p>Descubra o prazer de sabores autênticos e texturas envolventes. Na SweetDelights, cada mordida é uma celebração. Seja bem-vindo e deixe-nos adoçar seus momentos especiais!</p>
+            <div id="bemVindodiv">
+                <div id="infoDiv">
+                    <h1>Bem-vindo à SweetDelights!</h1>
+                    <p>Explore o universo de sabores irresistíveis da nossa confeitaria. De cupcakes delicados a bolos personalizados, cada doce é uma obra de arte comestível feita com carinho.</p>
+                    <p>Descubra o prazer de sabores autênticos e texturas envolventes. Na SweetDelights, cada mordida é uma celebração. Seja bem-vindo e deixe-nos adoçar seus momentos especiais!</p>
+                </div>
+                <div id="sobreDiv">
+                    <h2>Sobre Nós:</h2>
+                    <p>Somos apaixonados por transformar ingredientes de alta qualidade em criações confeitadas que encantam. Desde a nossa fundação, nossa missão é proporcionar momentos doces e memoráveis para nossos clientes.</p>
+                    <p>Nossos valores incluem dedicação à qualidade, criatividade e atendimento excepcional. Cada doce que produzimos reflete o cuidado e a paixão que temos pela confeitaria.</p>
+                    <p>Conheça a equipe dedicada por trás de cada criação deliciosa - somos movidos pela alegria de ver nossos clientes felizes.</p>
+                </div>
+                <div id="imgDiv"></div>
             </div>
-            <div id="imgDiv"></div>
         </section>
-        <!--Sessão sobre nós-->
-        <section class="sessoes" id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Somos apaixonados por transformar ingredientes de alta qualidade em criações confeitadas que encantam. Desde a nossa fundação, nossa missão é proporcionar momentos doces e memoráveis para nossos clientes.</p>
-            <p>Nossos valores incluem dedicação à qualidade, criatividade e atendimento excepcional. Cada doce que produzimos reflete o cuidado e a paixão que temos pela confeitaria.</p>
-            <p>Conheça a equipe dedicada por trás de cada criação deliciosa - somos movidos pela alegria de ver nossos clientes felizes.</p>
+        <!--Sessão Menu-->
+        <section class="sessoes" id="menu">
+            <div id="cardapioH2">
+                <h2>Nosso cardápio!</h2>
+            </div>
+            <div id="menuDiv">
+                <div id="cardapio">
+                    <div class="menuImgs" id="menuImg1"></div>
+                    <div class="menuImgs" id="menuImg2"></div>
+                    <div class="menuImgs" id="menuImg3"></div>
+                    <div class="menuImgs" id="menuImg4"></div>
+                    <div class="menuImgs" id="menuImg5"></div>
+                    <div class="menuImgs" id="menuImg6"></div>
+                </div>
+            </div>
         </section>
         <!--Sessão Contatos-->
         <section class="sessoes" id="contatos">
-            <form>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="i_nome" name="nome"><br>
-                <label for="email">E-mail:</label><br>
-                <input type="text" id="i_email" name="email"><br>
-                <label for="telefone">Telefone:</label><br>
-                <input type="text" id="i_telefone" name="telefone"><br>
-                <label for="mensagem">Mensagem:</label><br>
-                <input type="text" id="i_mensagem" name="mensagem"><br>
-            </form>
+            <div id="contatoDiv">
+                <form id="formulario">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="i_nome" name="nome"><br>
+                    <label for="email">E-mail:</label><br>
+                    <input type="text" id="i_email" name="email"><br>
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="text" id="i_telefone" name="telefone"><br>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <input type="text" id="i_mensagem" name="mensagem"><br>
+                </form>
+            </div>
         </section>
     </div>
 </body>

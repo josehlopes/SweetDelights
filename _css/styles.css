@@ -1,32 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 /* Configuração do documento */
 * { 
-    margin: 0;   
-    padding: 0;
+    margin: 0px;   
+    padding: 0px;
     box-sizing: border-box;
 }
 html {
     font-family: "Merriweather", serif;
-    font-size: 18px;
 }
 
 body {
     min-height: 100vh;
     width: 100%;
-    border: 5px dashed red;
+    font-size: calc(15px + 0.390625vw);
 }
 
 .main {
     display: grid;  
-    grid-gap: 5%;  
+    grid-gap: 1%;  
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));  
+    background: rgb(242,155,178);
+    background: linear-gradient(120deg, rgba(242,155,178,1) 0%, rgba(242,175,155,1) 50%, rgba(242,155,221,1) 100%);
 }
 
 /* Header */
 
 .header {
-    
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,44 +35,265 @@ body {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
+    z-index: 9;
+    width: 100%;
+    margin-top: 0px;
 
 }
 
 .navegacao {
 
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 95%;
     height: 65%;
     background-color: rgba(215, 81, 108, 84);
     border-radius: 60px;
+    box-shadow: 1px 1px 30px 1px rgba(0,0,0,0.46);
 
-    
 }
 
 .navegacao ul {    
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     margin: auto;
     justify-content: space-around;
 }
 
 .navegacao ul li {
-
-    padding: 2%;
+    margin: auto;
+    padding: 10px 15px;
+    justify-content: center;
     display: inline-block;
     
 }
 
 .navegacao ul li a {
     font-weight: bold;
-    font-size: 100%;
+    padding: 5px;
+    border-radius: 20px;
     text-decoration: none;
     color: white;
+    box-sizing: border-box;
 }
 
+.navegacao ul li a:hover {
+    color: white;
+    background-color: #592B20;
+    
+}
 /* Content */
 
 .sessoes {
     grid-row-start: 2;
+}
+
+/* Sessão bem vindo */
+#bemVindo {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+#bemVindodiv{
+    display: flex;
+    width: 95%;
+    height: 800px;
+    border-radius: 60px;
+    margin: 4% auto auto auto;
+    overflow: hidden;
+    border: 2px solid #592B20;
+}
+
+#infoDiv {
+    position: absolute;
+    padding: 2%;
+    width: 40%;
+    top: 12%;
+    left: 7%;
+    z-index: 1;
+    border-radius: 60px;
+    background-color: rgba(89, 43, 32, 0.85);
+    box-shadow: 2px 8px 15px 3px rgba(0,0,0,0.46);
+    color: white;
+}
+#sobreDiv  {
+    position: absolute;
+    padding: 2%;
+    width: 40%;
+    top: 57%;
+    left: 7%;
+    z-index: 1;
+    border-radius: 60px;
+    background-color: rgba(89, 43, 32, 0.85);
+    box-shadow: 2px 8px 15px 3px rgba(0,0,0,0.46);
+    color: white;
+}
+#imgDiv {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../_img/_cupcake.jpg");
+    background-size: cover;
+    background-position: right;
+    background-clip: border-box;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px 0px inset, rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
+}
+
+/* Menu de produtos */
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    grid-row-start: 4;
     grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#cardapioH2 {
+    float: top;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+
+#cardapioH2 h2 {
+    position: relative;
+    left: 9%;
+}
+#menuDiv {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: auto;
+}
+#cardapio {
+    display: grid;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.menuImgs {
+    margin: 10px 0px 10px 0px;
+    border: 3px solid white;
+    box-shadow: 2px 8px 15px 3px rgba(0,0,0,0.46);
+
+}
+
+.menuImgs:hover {
+    box-shadow: rgb(114, 114, 114) 0px 0px 10px 5px inset;
+}
+
+#menuImg1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-image: url("../_img/_confectionery1.jpg");
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+#menuImg2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background-image: url("../_img/_confectionery2.jpg");
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+}
+
+#menuImg3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    background-image: url("../_img/_confectionery3.jpg");
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+
+}
+
+#menuImg4 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-image: url("../_img/_confectionery4.jpg");
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+
+}
+
+#menuImg5 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-image: url("../_img/_confectionery5.jpg");
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+
+}
+
+#menuImg6 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-image: url("../_img/_confectionery6.jpg");
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+
+}
+
+#contatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#contatoDiv{
+    display: flex;
+    width: 95%;
+    height: auto;
+    padding: ;
+    justify-content: center;
+    background-image: url("../_img/_background.jpg");
+    background: rgb(242,155,178);
+    border-radius: 60px;
+    
+}
+
+#formulario {
+    width: 80%;
+}
+
+#formulario label,input {
+    width: 100%;
 }
