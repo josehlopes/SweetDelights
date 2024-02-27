@@ -7,6 +7,8 @@
 }
 html {
     font-family: "Merriweather", serif;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -276,6 +278,8 @@ body {
     grid-row-end: 7;
     grid-column-start: 1;
     grid-column-end: 4;
+    background: rgb(242,155,178);
+
 }
 
 #contatoDiv{
@@ -285,17 +289,9 @@ body {
     padding: 15px;
     overflow: hidden;
     justify-content: center;
-    background-image: url("../_img/_background.jpg");
     background: rgb(242,155,178);
     border-radius: 60px;
     
-}
-
-#contatoDiv img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    mix-blend-mode: lighten;
 }
 
 #formulario {
@@ -304,4 +300,15 @@ body {
 
 #formulario label,input {
     width: 100%;
+    border-radius: 20px;
+    border: rgb(242,155,178);
+}
+
+#formulario label {
+    font-weight: bold;
+}
+
+#formulario input {
+    font-weight: bold;
+    line-height: 2;
 }
